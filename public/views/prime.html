@@ -1,0 +1,14 @@
+<form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+<div ng-controller="foxyController" style="text-align:center">
+    <div class="form-group">
+        <label for="primeNumbertobe">Number:</label>
+        <input type="number" class="form-control" id="primeNumbertobe" placeholder="Please enter a number to check if its a prime" ng-model="primeNumbertobe" required>
+    </div>
+    <div class="form-group" style="margin:2%;align-self: center">
+        <button class="btn btn-md btn-success" type="submit" ng-click="getPrimecheck(primeNumbertobe)" ng-disabled="userForm.$invalid">Please click</button>   
+    </div>
+    <div>
+        <span style="font-size:18px"><b>{{primeNumbertobe}}</b> {{isprime}} </span>
+    </div>
+</div>
+</form>

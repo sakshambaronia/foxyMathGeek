@@ -1,0 +1,14 @@
+<form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+<div ng-controller="foxyController" style="text-align:center">
+    <div class="form-group">
+        <label for="fibonacciNumber">Number:</label>
+        <input type="number" class="form-control" id="fibonacciNumber" placeholder="Please enter a number to print a fibonacci series" ng-model="fibonacciNumber" required>
+    </div>
+    <div style="margin:2%;align-self: center">
+        <button class="btn btn-md btn-success" type="submit" ng-click="getfibonacciSeries(fibonacciNumber)" ng-disabled="userForm.$invalid">Please click</button>   
+    </div>
+    <div>
+        <span style="font-size:18px">Fibonacci series till {{fibonacciNumber}} is : {{fibonacciSeriesOutput}} </span>
+    </div>
+</div>
+</form>

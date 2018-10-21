@@ -1,0 +1,12 @@
+foxyApp.config(['$routeProvider',function($routeProvider){
+    $routeProvider
+    .when("/prime",{
+        templateUrl:'views/prime.html'
+    })
+    .when("/palindrome",{
+        templateUrl:'views/palindrome.html'
+    })
+    .when("/fibonacci",{
+        templateUrl:'views/fibonacci.html'
+    });
+}]);
