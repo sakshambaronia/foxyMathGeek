@@ -12,7 +12,7 @@ foxyApp.controller('foxyController',function($scope,$http,foxyService){
 
     $scope.getPalindromeCheck= function(palindrome){
         //Ajax request to check if string is palindrome
-        $http.get("/foxyMathGeek/public/logic/palindrome.php?palindrome="+palindrome)
+        $http.get("./logic/palindrome.php?palindrome="+palindrome)
         .success(function(check){
             console.log(check);
             if(check==1){
